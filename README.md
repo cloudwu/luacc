@@ -61,7 +61,7 @@ local luacc.cfunction [[
 void swap(foo &f) {
 	int temp = f->x;
 	f->x = f->y;
-	f->y = f->x;
+	f->y = temp;
 }
 ]]
 
